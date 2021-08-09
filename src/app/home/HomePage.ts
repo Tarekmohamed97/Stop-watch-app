@@ -18,7 +18,7 @@ export class HomePage {
   timer: any = false;
   progress: any = 0;
   minutes: number = 1;
-  seconds: any = 30;
+  seconds: number = 30;
 
   elapsed: any = {
     h: '00',
@@ -31,7 +31,7 @@ export class HomePage {
   }
 
   startTimer() {
-
+ 
     if (this.timer)
       clearInterval(this.timer);
 
